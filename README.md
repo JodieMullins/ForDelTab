@@ -1,12 +1,12 @@
 # Store Sales
 
-Store data includes originally at start of project (within the first 5 commits): 
+Store data includes at start of project: 
 
     - sales representatives and regional areas
-    
+
     - orders placed and customers delivered to
 
-    - orders returned (boolean and ID)
+    - orders returned
 
 Goals: 
     - Determine Sales Growth KPI
