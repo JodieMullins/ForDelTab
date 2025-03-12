@@ -15,6 +15,14 @@ def CreateForDel():
     con = db.connect('Fordel.db')
 
     #mc for mouseclick
-    mc = con.cursor
+    mc = con.cursor()
 
+    # ORDERS
+   
+    orders = pd.read_csv('orders.csv', index_col=None)
+
+    orders_table = pd.orders.to_sql('orders', if_exists='replace')
+
+
+    # save changes from INSERT
     con.commit()
