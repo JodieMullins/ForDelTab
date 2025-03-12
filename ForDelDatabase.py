@@ -19,10 +19,21 @@ def CreateForDel():
 
     # ORDERS
    
-    orders = pd.read_csv('orders.csv', index_col=None)
+    orders = pd.read_csv('Orders.csv', index_col=None)
 
     orders_table = pd.orders.to_sql('orders', if_exists='replace')
 
+    # RETURNS
+
+    returns = pd.read_csv('Returns.csv', index_col=None)
+
+    returns_table = pd.returns.to_sql('returns', if_exists='replace')
+
+    # PEOPLE
+
+    people = pd.read_csv('People.csv', index_col=None)
+
+    people_table = pd.people.to_sql('people', if_exists='replace')
 
     # save changes from INSERT
     con.commit()
