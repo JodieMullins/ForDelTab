@@ -534,6 +534,10 @@ ForageDelTab/
 deldata/*.json
 share/
 ipython.1
+deldata/KPI.txt
+telemetryfileconversion.py
+
+deldata/telemetrydaikibo.csv
 
 # Spyder project settings
 .spyderproject
