@@ -1,10 +1,10 @@
 import sqlite3 as db
 import pandas as pd
 
-
+"""
 #def CreateForDel():
 
-"""
+
 
     Establishes foundation for Fordel store's database. 
     Executes 3 tables: 
@@ -12,7 +12,7 @@ import pandas as pd
                 2) Returns 
                 3) Sales representatives and regions
     
-"""
+
     # establish connection to SQL database
 con = db.connect('Fordel.db')
 
@@ -40,7 +40,7 @@ people_table = pd.people.to_sql(name=people, con=mc, if_exists='replace')
     # save changes from INSERT
 con.commit()
 
-"""
+
     def main():
         CreateForDel()
 
