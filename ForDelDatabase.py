@@ -50,3 +50,24 @@ if __name__ == "__main__":
     main()
 
 """
+
+
+"""
+
+# establish connection to SQL database
+conn = db.connect('Fordel.db')
+
+# mc for mouseclick
+mc = conn.cursor()
+
+
+excel_df = pd.read_excel('tabstoreUpdated.xlsx', sheet_name=None)
+# read in excel file
+# iterate through sheets
+    # > each sheet is table within database
+
+conn.commit()
+
+conn.close()
+
+"""
