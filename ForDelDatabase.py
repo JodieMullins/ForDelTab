@@ -40,6 +40,8 @@ people_table = pd.people.to_sql(name=people, con=mc, if_exists='replace')
     # save changes from INSERT
 con.commit()
 
+con.close()
+
 
     def main():
         CreateForDel()
