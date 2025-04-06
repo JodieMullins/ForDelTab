@@ -8,13 +8,25 @@ Store data includes at start of project:
 
     - orders returned
 
+Columns created / calculated: 
+    - Month (pulled from serialized date)
+
+    - Year (pulled from serialized date)
+
+    - Quarter assigned to Month based on logic within IFS function
+
+    - Number of days for delivery calculated
+
+    - Ship method simplified to one word entries
+    
+
 Goals: 
     - Determine Sales Growth KPI
 
         > Sales Growth = (Current period sales - Sales during past period) / Sales during past period x 100
 
             > Requires breaking down current sales data into quarterly sections
-                [x] Completed via Excel formulas
+                [x] Completed via Excel
 
     - Hone in on Returns 
 
